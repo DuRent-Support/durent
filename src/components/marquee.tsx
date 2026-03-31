@@ -3,7 +3,7 @@ const partners = [
   "Universal", "Paramount", "Lionsgate", "A24",
 ];
 
-export const Marquee = () => {
+const Marquee = () => {
   return (
     <section id="partners" className="py-20 border-t border-b border-border overflow-hidden">
       <div className="container mb-10">

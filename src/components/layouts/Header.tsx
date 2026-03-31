@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
+import Image from "next/image";
 
 const navLinks = [
   { label: "Fitur", href: "#features" },
@@ -27,9 +28,20 @@ const Navbar = () => {
       }`}
     >
       <div className="container flex items-center justify-between">
-        <a href="#" className="font-heading text-xl font-bold tracking-tight text-foreground">
-          Durent
-        </a>
+        <div className="flex gap-1">
+          <Image
+            src="/durent-white.webp"
+            alt="Durent"
+            width="35"
+            height="29"
+          />
+          <a
+            href="#"
+            className="font-heading text-xl font-bold tracking-tight text-foreground"
+          >
+            DuRent
+          </a>
+        </div>
 
         <nav className="hidden md:flex items-center gap-8">
           {navLinks.map((link) => (
@@ -44,9 +56,6 @@ const Navbar = () => {
         </nav>
 
         <div className="hidden md:flex items-center gap-3">
-          <Button variant="ghost" size="sm" className="text-muted-foreground hover:text-foreground">
-            Masuk
-          </Button>
           <Button size="sm">Mulai Sekarang</Button>
         </div>
 
@@ -71,7 +80,9 @@ const Navbar = () => {
             </a>
           ))}
           <div className="flex flex-col gap-2 mt-3 pt-3 border-t border-border">
-            <Button variant="ghost" size="sm">Masuk</Button>
+            <Button variant="ghost" size="sm">
+              Masuk
+            </Button>
             <Button size="sm">Mulai Sekarang</Button>
           </div>
         </div>
