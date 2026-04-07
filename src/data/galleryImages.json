@@ -1,0 +1,145 @@
+{
+  "images": [
+    {
+      "id": 1,
+      "src": "/images/gallery/anamaeris.jpg",
+      "alt": "Behind the scenes",
+      "caption": "Behind the scenes",
+      "position": {
+        "top": "10px",
+        "topSm": "15px",
+        "topMd": "20px",
+        "left": "2%",
+        "leftSm": "3%",
+        "leftMd": "2%"
+      },
+      "size": {
+        "width": "140px",
+        "widthSm": "160px",
+        "widthMd": "240px",
+        "height": "100px",
+        "heightSm": "115px",
+        "heightMd": "175px"
+      },
+      "animation": {
+        "direction": "top-left",
+        "speed": 0.8,
+        "rotation": -3,
+        "zIndex": 10
+      },
+      "showCaption": true
+    },
+    {
+      "id": 2,
+      "src": "/images/gallery/athea.png",
+      "alt": "Production setup",
+      "position": {
+        "top": "230px",
+        "topSm": "250px",
+        "topMd": "280px",
+        "left": "2%",
+        "leftSm": "3%",
+        "leftMd": "5%"
+      },
+      "size": {
+        "width": "130px",
+        "widthSm": "150px",
+        "widthMd": "220px",
+        "height": "92px",
+        "heightSm": "105px",
+        "heightMd": "170px"
+      },
+      "animation": {
+        "direction": "down",
+        "speed": 0.9,
+        "rotation": 2,
+        "zIndex": 8
+      },
+      "showCaption": false
+    },
+    {
+      "id": 3,
+      "src": "/images/gallery/papaliat.png",
+      "alt": "Outdoor shooting",
+      "position": {
+        "top": "120px",
+        "topSm": "130px",
+        "topMd": "50px",
+        "left": "42%",
+        "leftSm": "44%",
+        "leftMd": "38%"
+      },
+      "size": {
+        "width": "125px",
+        "widthSm": "145px",
+        "widthMd": "210px",
+        "height": "88px",
+        "heightSm": "100px",
+        "heightMd": "150px"
+      },
+      "animation": {
+        "direction": "top-right",
+        "speed": 0.7,
+        "rotation": -1,
+        "zIndex": 6
+      },
+      "showCaption": false
+    },
+    {
+      "id": 4,
+      "src": "/images/gallery/parwins.jpg",
+      "alt": "Team collaboration",
+      "position": {
+        "top": "330px",
+        "topSm": "350px",
+        "topMd": "380px",
+        "left": "35%",
+        "leftSm": "38%",
+        "leftMd": "40%"
+      },
+      "size": {
+        "width": "120px",
+        "widthSm": "140px",
+        "widthMd": "200px",
+        "height": "110px",
+        "heightSm": "125px",
+        "heightMd": "200px"
+      },
+      "animation": {
+        "direction": "up",
+        "speed": 1.1,
+        "rotation": 5,
+        "zIndex": 11
+      },
+      "showCaption": false
+    },
+    {
+      "id": 5,
+      "src": "/images/gallery/yafet.jpg",
+      "alt": "Equipment setup",
+      "position": {
+        "top": "10px",
+        "topSm": "15px",
+        "topMd": "20px",
+        "left": "65%",
+        "leftSm": "66%",
+        "leftMd": "60%"
+      },
+      "size": {
+        "width": "118px",
+        "widthSm": "135px",
+        "widthMd": "195px",
+        "height": "84px",
+        "heightSm": "95px",
+        "heightMd": "140px"
+      },
+      "animation": {
+        "direction": "bottom-left",
+        "speed": 0.85,
+        "rotation": 3,
+        "zIndex": 7
+      },
+      "showCaption": false
+    }  
+  ]
+}
