@@ -140,7 +140,7 @@ const Hero = () => {
     services[(currentIndex - 1 + services.length) % services.length];
 
   return (
-    <section className="relative min-h-screen flex items-center overflow-hidden bg-dark-bg pt-20">
+    <section className="relative min-h-screen flex items-start md:items-center overflow-hidden bg-dark-bg pt-20">
       {/* Animated Gradient Background */}
       <div className="absolute inset-0 z-0 overflow-hidden">
         {/* Geometric shapes with gradients */}
@@ -160,11 +160,11 @@ const Hero = () => {
       </div>
 
       <div
-        className={`container mx-auto px-6 relative z-10 py-12 transition-opacity duration-700 ${
+        className={`container mx-auto px-6 relative z-10 py-8 md:py-12 transition-opacity duration-700 ${
           scrolled ? "opacity-30" : "opacity-100"
         }`}
       >
-        <div className="flex flex-col md:grid md:grid-cols-2 gap-12 items-center min-h-[80vh]">
+        <div className="flex flex-col md:grid md:grid-cols-2 gap-6 md:gap-12 items-center md:min-h-[80vh]">
           {/* Left side - Text Content */}
           <div className="space-y-8 order-1 md:order-1 text-center md:text-left w-full">
             {/* Badge */}
@@ -249,13 +249,15 @@ const Hero = () => {
           {/* Right side - 3D Carousel */}
           <div
             className="order-2 md:order-2 relative h-[400px] md:h-[600px] flex items-center justify-center w-full"
-            style={{ perspective: "1200px" }}
             onTouchStart={handleTouchStart}
             onTouchMove={handleTouchMove}
             onTouchEnd={handleTouchEnd}
           >
             {/* 3D Stack Container */}
-            <div className="relative w-full h-full flex items-center justify-center">
+            <div
+              className="relative w-full h-full flex items-center justify-center"
+              style={{ perspective: "1200px" }}
+            >
               {services.map((service, index) => {
                 const offset = index - currentIndex;
                 const absOffset = Math.abs(offset);
@@ -281,7 +283,7 @@ const Hero = () => {
 
                   // Circular positioning
                   const angle = (adjustedOffset / services.length) * 360;
-                  const radius = isSmallScreen ? 100 : 150;
+                  const radius = isSmallScreen ? 80 : 120;
 
                   translateX = Math.sin((angle * Math.PI) / 180) * radius;
                   translateY =
@@ -319,7 +321,7 @@ const Hero = () => {
                     key={index}
                     className={`absolute rounded-3xl overflow-hidden shadow-2xl transition-all duration-700 ease-out ${
                       isMobile
-                        ? "left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2"
+                        ? "left-1/2 top-1/2"
                         : "left-1/2 -translate-x-1/2"
                     }`}
                     style={{
@@ -330,14 +332,14 @@ const Hero = () => {
                       filter: `blur(${blur}px)`,
                       zIndex: offset === 0 ? 30 : 20 - absOffset,
                       width: isSmallScreen
-                        ? "240px"
+                        ? "220px"
                         : isMobile
-                          ? "320px"
+                          ? "270px"
                           : "350px",
                       height: isSmallScreen
-                        ? "240px"
+                        ? "220px"
                         : isMobile
-                          ? "320px"
+                          ? "270px"
                           : "350px",
                       border:
                         offset === 0

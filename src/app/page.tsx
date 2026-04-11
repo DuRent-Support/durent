@@ -52,7 +52,7 @@ export default function Page() {
                 </h2>
                 <p className="text-gray-400 text-lg md:text-xl max-w-2xl mx-auto">
                   Download pricelist kami untuk melihat semua produk dan harga
-                  terbaru Februari 2026
+                  terbaru Maret 2026
                 </p>
               </div>
 
